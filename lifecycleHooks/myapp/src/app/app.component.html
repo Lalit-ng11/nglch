@@ -1,0 +1,10 @@
+<h1 class="container">Hello world.!</h1>
+<div class="container">
+    <h2 class="text-white bg-dark">User Profile Dashboard.</h2>
+
+    <button type="button" class="btn btn-primary me-5" (click)="updateUser()">Update User</button>
+    <button type="button" class="btn btn-warning" (click)="toggleProfile()">Toggle user Profile</button>
+    <br><br>
+</div>
+<hr>
+<app-profile [user]="user" *ngIf="ShowProfile"></app-profile>
